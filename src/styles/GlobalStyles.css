@@ -1,10 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--standard-font);
+    color: var(--white);
 }
 
 /* variables */
 
 :root {
-    --cor-azul-escuro: #010d23;
+    --color-blue-dark: #010d23;
+    --color-azul-inter: #03223f;
+    --color-azul-light: #038bbb;
+    --color-beige-light: #fccb6f;
+    --color-beige-inter: #e19f41;
+    --white: #FFFFFF;
+    --black: #000000;
+    --special-font: 'Shantell Sans', 'cursive';
+    --standard-font: 'Montserrat', 'sans-serif';
 }
