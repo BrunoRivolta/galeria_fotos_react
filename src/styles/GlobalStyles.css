@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* variables */
+
+:root {
+    --cor-azul-escuro: #010d23;
+}
