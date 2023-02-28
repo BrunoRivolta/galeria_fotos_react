@@ -14,7 +14,6 @@ export default function Router() {
           <Route path="/" element={<Gallery />} />
           <Route path="/favoritos" element={<Favorites />} />
           <Route path="/sobre" element={<About />} />
-          <Route path="*" element={<div>Pagina não encontrada</div>} />
         </Routes>
       <Footer />
     </BrowserRouter>

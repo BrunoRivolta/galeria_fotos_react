@@ -1,0 +1,31 @@
+@import '../../styles/GlobalStyles.css';
+
+.card {
+    background-color: var(--color-azul-inter);
+    width: 220px;
+    height: 290px;
+    margin: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 21px;
+    img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .text_container {
+        padding: 10px 0 0 15px;
+        h3 {
+
+        }
+        p {
+            padding: 5px;
+        }
+    }
+    .icon_container {
+        display: flex;
+        justify-content: end;
+        padding-right: 15px;
+        .icon {
+            padding-right: 10px;
+        }
+    }
+}
