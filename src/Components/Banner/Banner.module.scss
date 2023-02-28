@@ -1,0 +1,29 @@
+.container {
+    position: relative
+}
+
+.imagem {
+    position: absolute;
+}
+
+.titulo {
+    font-family: var(--special-font);
+    font-size: 30px;
+    text-shadow: 2px 2px var(--black);
+    color: var(--color-beige-inter);
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 2;
+}
+
+.titulo1 {
+    font-family: var(--special-font);
+    font-size: 30px;
+    text-shadow: 2px 2px var(--black);
+    color: var(--color-beige-inter);
+    position: absolute;
+    left: 100px;
+    top: 140px;
+    z-index: 2;
+}

@@ -1,8 +1,12 @@
+import Banner from 'Components/Banner'
 import React from 'react'
 import styles from './Gallery.module.scss'
 
 export default function Gallery() {
   return (
-    <div className={styles.background}>Page</div>
+    <>
+      <Banner />
+      <div className={styles.background}>Page</div>
+    </>
   )
 }
