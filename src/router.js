@@ -5,16 +5,19 @@ import Navigation from "Components/Navigation"
 import Footer from "Components/Footer"
 import Favorites from "Pages/Favorites"
 import About from "Pages/About"
+import FavoritesProvider from "Common/Context/favorites"
 
 export default function Router() {
   return (
     <BrowserRouter>
       <Navigation />
-        <Routes>    
-          <Route path="/" element={<Gallery />} />
-          <Route path="/favoritos" element={<Favorites />} />
-          <Route path="/sobre" element={<About />} />
-        </Routes>
+        <FavoritesProvider>
+          <Routes>
+            <Route path="/" element={<Gallery />} />
+            <Route path="/favoritos" element={<Favorites />} />
+            <Route path="/sobre" element={<About />} />
+          </Routes>
+        </FavoritesProvider>    
       <Footer />
     </BrowserRouter>
   )
