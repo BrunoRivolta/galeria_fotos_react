@@ -1,4 +1,4 @@
-@import '../../styles/GlobalStyles.css';
+@import '../../styles/GlobalStyles.scss';
 
 .card {
     background-color: var(--color-blue-inter);
@@ -29,9 +29,9 @@
         }
         .tag {
             display: inline;
-            border: 1px solid white;
+            border: 1px solid var(--white);
             border-radius: 10px;
-            background-color: rgba($color: #FFFFFF, $alpha: 0.2);
+            background-color: rgba($color: var(--white), $alpha: 0.2);
         }
     }
     .icon_container {
@@ -45,7 +45,7 @@
         .icon_red {
             padding-right: 10px;
             cursor: pointer;
-            fill: red;
+            fill: #970000;
         }
     }
     &:hover {

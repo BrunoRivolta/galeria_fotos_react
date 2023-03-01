@@ -1,7 +1,8 @@
-@import '../../styles/GlobalStyles.css';
+@import '../../styles/GlobalStyles.scss';
 
 .footer {
     background-color: var(--color-blue-light);
+    margin-top: 30px;
     width: 100%;
     height: 4rem;
     display: flex;

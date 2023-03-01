@@ -1,0 +1,53 @@
+@import '../../styles/GlobalStyles.scss';
+
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: 1000;
+    .modal {
+        position: fixed;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 60vh;
+        border-radius: 20px;
+        color: var(--black);
+        h2 {
+            color: var(--white);
+            padding: 10px 0 20px 0;
+        }
+        .foto {
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 20px;
+            border: 3px solid var(--white);
+        }
+        .botaoContainer {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(min-width: 1550px) {
+
+    .background {
+        .modal {
+            width: 70%;
+        }
+    }
+}
+
+@media(min-width: 2000px) {
+
+    .background {
+        .modal {
+            width: 60%;
+        }
+    }
+}
