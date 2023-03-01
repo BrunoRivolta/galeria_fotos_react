@@ -1,5 +1,15 @@
 @import '../../styles/GlobalStyles.css';
 
-.background {
-    background-color: var(--white);
+.container {
+    .titulo_galeria{
+        font-family: var(--special-font);
+        color: var(--black);
+        margin: 15px;
+        font-weight: 400;
+    }
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

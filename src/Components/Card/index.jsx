@@ -1,21 +1,20 @@
 import { FaRegHeart, FaTrash } from 'react-icons/fa';
+import { BiCamera } from 'react-icons/bi';
 import React from 'react'
-//import bd from '../../bd.json'
-import style from './Card.module.scss'
+import styles from './Card.module.scss'
 
-
-export default function Card() {
+export default function Card({ foto }) {
   return (
-    <div className={style.card}>
-        <img src='/assets/fotos/brasil1.webp' alt="" />
-        <div className={style.text_container}>
-            <h3>Titulo</h3>
-            <p>Foto tirada daqui mesmo</p>
-            <p>Autor</p>
+    <div className={styles.card}>
+        <img src={foto.endereco} alt={foto.titulo} />
+        <div className={styles.text_container}>
+            <h3>{foto.titulo}</h3>
+            <p><BiCamera /> {foto.autor}</p>
+            <p className={styles.tag}>{foto.tag}</p>
         </div>
-        <div className={style.icon_container}>
-            <FaTrash className={style.icon} />
-            <FaRegHeart className={style.icon} />
+        <div className={styles.icon_container}>
+            <FaTrash className={styles.icon} />
+            <FaRegHeart className={styles.icon} />
         </div>
     </div>
   )
