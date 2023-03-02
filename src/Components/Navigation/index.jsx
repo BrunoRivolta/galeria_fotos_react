@@ -11,7 +11,7 @@ export default function Navigation() {
             <li><img src={logo} alt="Logo Galeria Rivolta" /></li>
             <li><Link to={'/'}>Galeria</Link></li>
             <li><Link to={'/favoritos'}>Favoritos</Link></li>
-            <li><Link to={'/sobre'}>Sobre</Link></li>
+            <li><Link to={'/adicionar'}>Adicionar</Link></li>
         </ul>
     </nav>
   )

@@ -11,8 +11,8 @@ export default function Favorites() {
   return (
     <section className={styles.container}>
       <Banner />
-      <h2 className={styles.titulo_galeria}>Fotos Favoritas</h2>
-      <section className={styles.galeria}>
+      <h2 className={styles.title}>Fotos Favoritas</h2>
+      <section className={styles.gallery}>
         {favorite.map(photo => {
           return <Card key={photo.id} photo={photo}/>
         })}

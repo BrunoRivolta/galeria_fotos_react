@@ -1,15 +1,21 @@
 @import '../../styles/variables';
 
 .container {
-    .titulo_galeria{
+    .title {
         font-family: $special-font;
         color: $black;
         margin: 15px;
         font-weight: 400;
     }
-    .galeria {
+    .gallery {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media(max-width: 550px) {
+    .title {
+        font-size: 1em;
     }
 }
