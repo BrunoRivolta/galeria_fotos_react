@@ -13,7 +13,6 @@
     position: relative;
     z-index: 0;
     cursor: pointer;
-
     &:hover {
       color: $color-blue-dark;
       border-radius: 10px;
@@ -37,8 +36,21 @@
 
 @media(max-width: 550px) {
   .botao {
-    font-size: 0.8em;
+    margin-top: 0.5rem;
+    font-size: 0.6em;
+    padding: 10px 5px;
+    &::before {
+    border: 2px solid transparent;
+    }
+  }
+}
 
+@media(max-height: 400px) {
+  .botao {
+    margin-top: 0.5rem;
+    font-weight: 300;
+    font-size: 0.5em;
+    padding: 5px 5px;
     &::before {
     border: 2px solid transparent;
     }

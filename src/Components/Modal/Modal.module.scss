@@ -34,10 +34,18 @@
     }
 }
 
-@media(min-width: 1200px) {
+@media(max-height: 400px) {
     .background {
         .modal {
             width: 50%;
+            h2 {
+                font-size: 1em;
+                padding: 10px 0 10px 0;
+            }
+            .foto {
+                border-radius: 10px;
+                border: 2px solid $white;
+            }
         }
     }
 }
