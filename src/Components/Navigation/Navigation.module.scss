@@ -27,3 +27,23 @@
         cursor: pointer; 
     }
 } 
+
+@media(max-width: 550px) {
+    .background {
+        height: 2em;
+        li {
+            list-style-type: none;
+            padding: 1rem;
+            a {
+                font-size: 0.5em;
+                &:hover { 
+                    font-size: 0.45em;
+                }
+            }
+        }
+        img {
+            height: 1.5em;
+            padding-right: 0.5em;
+        }
+    } 
+  }

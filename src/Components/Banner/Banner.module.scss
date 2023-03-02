@@ -29,3 +29,17 @@
     top: 140px;
     z-index: 2;
 }
+
+@media(max-width: 550px) {
+    .titulo {
+        font-size: 1em;
+        left: 50px;
+        top: 40px;
+    }
+    
+    .titulo1 {
+        font-size: 1em;
+        left: 50px;
+        top: 60px;
+    }
+}

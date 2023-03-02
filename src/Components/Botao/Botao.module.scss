@@ -34,3 +34,13 @@
     mask-composite: exclude;
   }
 }
+
+@media(max-width: 550px) {
+  .botao {
+    font-size: 0.8em;
+
+    &::before {
+    border: 2px solid transparent;
+    }
+  }
+}

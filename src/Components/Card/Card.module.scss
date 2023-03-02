@@ -52,3 +52,37 @@
         width: 225px;
     }
 }
+
+@media(max-width: 550px) {
+    .card {
+        background-color: $color-blue-inter;
+        width: 170px;
+        height: 230px;
+        margin: 5px;
+        .text_container {
+            padding-left: 10px;
+            h3 {
+                font-size: 0.8em;
+                width: 150px;
+            }
+            p {
+                font-size: 0.6em;
+            }
+            .tag {
+                border-radius: 5px;
+            }
+        }
+        .icon_container {
+            padding: 0 7px;
+            .icon {
+                font-size: 0.8em;
+            }
+            .icon_red {
+                font-size: 0.8em;
+            }
+        }
+        &:hover {
+            width: 175px;
+        } 
+  }
+}
