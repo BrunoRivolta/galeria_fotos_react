@@ -1,17 +1,26 @@
 import Banner from 'Components/Banner'
 import Card from 'Components/Card'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Gallery.module.scss'
-import bd from 'bd.json'
 import Tags from 'Components/Tags'
 
-export default function Gallery() {
+export default function Gallery() { 
 
-  const [setItens] = useState(bd)
-  const tags = [...new Set(bd.map(valor => valor.tag))]
+  const address = "https://6400686f29deaba5cb36bf60.mockapi.io/rivolta/galeria"
+  
+  const [image, setImage] = useState([])
+  
+  useEffect(() => {
+    fetch(address)
+      .then(res => res.json())
+      .then(item => setImage(item))
+    }, [])
+
+  const [setItens] = useState(image)
+  const tags = [...new Set(image.map(valor => valor.tag))]
 
   const filtraFotos = tag => {
-    const novasFotos = bd.filter(foto => {
+    const novasFotos = image.filter(foto => {
       return foto.tag === tag
     })
     setItens(novasFotos)
@@ -23,7 +32,7 @@ export default function Gallery() {
       <h2 className={styles.titulo_galeria}>Galeria de Fotos</h2>
       <Tags tags={tags} filter={filtraFotos} setItens={setItens} />
       <section className={styles.galeria}>
-        {bd.map(foto => {
+        {image.map(foto => {
           return <Card key={foto.id} foto={foto}/>
         })}
       </section> 
