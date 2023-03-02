@@ -1,4 +1,4 @@
-@import '../../styles/GlobalStyles.scss';
+@import '../../styles/variables';
 
 .background {
     position: fixed;
@@ -16,16 +16,16 @@
         width: 80%;
         height: 60vh;
         border-radius: 20px;
-        color: var(--black);
+        color: $black;
         h2 {
-            color: var(--white);
+            color: $white;
             padding: 10px 0 20px 0;
         }
         .foto {
             box-sizing: border-box;
             width: 100%;
             border-radius: 20px;
-            border: 3px solid var(--white);
+            border: 3px solid $white;
         }
         .botaoContainer {
             width: 50%;
@@ -34,7 +34,7 @@
     }
 }
 
-@media(min-width: 1550px) {
+@media(min-width: 1200px) {
 
     .background {
         .modal {
@@ -47,7 +47,7 @@
 
     .background {
         .modal {
-            width: 60%;
+            width: 55%;
         }
     }
 }

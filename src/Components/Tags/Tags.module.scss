@@ -1,30 +1,30 @@
-@import '../../styles/GlobalStyles.scss';
+@import '../../styles/variables';
  
-.tags {
-  width: 65vw;
+.container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  color: var(--black);
-  font-family: var(--standard-font);
+  font-family: $standard-font;
   font-size: 16px;
- 
+  margin-right: 20px;
   p {
-    font-size: 1.25rem;
+    font-size: 16px;
+    color: $black;
+    font-weight: 600;
+    margin-right: 10px;
   }
- 
-  &__lista {
+  .tags_container {
     list-style: none;
-    width: 500px;
-    padding: 0;
     display: flex;
-    justify-content: space-between;
- 
     li {
-      background-color: var(--color-blue-inter);
+      background-color: $color-cyan-light;
+      color: $black;
       padding: 6px 10px;
       border-radius: 8px;
       cursor: pointer;
+      margin: 20px 2px;
+      font-size: 14px;
+      font-weight: 600;
     }
   }
 }

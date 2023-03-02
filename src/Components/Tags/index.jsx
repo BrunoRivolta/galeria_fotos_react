@@ -1,18 +1,17 @@
 import React from 'react'
 import styles from './Tags.module.scss'
-import fotos from '../../bd.json'
 
-export default function Tags({tags, filter, setItens}) {
+export default function Tags({tags, filter, setItens, image}) {
   return (
-    <div className={styles.tags}>
+    <div className={styles.container}>
       <p>Filtre por tags:</p>
-      <ul className={styles.tags__lista}>
+      <ul className={styles.tags_container}>
         {tags.map(tag => {
           return (
             <li key={tag} onClick={() => filter(tag)} >{tag}</li>
           )
         })}
-        <li onClick={() => setItens(fotos)}>Todas</li>
+        <li onClick={() => setItens(image)}>Todas</li>
       </ul>
     </div>
   )

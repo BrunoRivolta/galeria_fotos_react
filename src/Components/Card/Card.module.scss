@@ -1,13 +1,13 @@
-@import '../../styles/GlobalStyles.scss';
+@import '../../styles/variables';
 
 .card {
-    background-color: var(--color-blue-inter);
+    background-color: $color-blue-inter;
     width: 220px;
     height: 290px;
     margin: 5px;
-    border: 1px solid var(--color-blue-light);
+    border: 1px solid $color-blue-light;
     border-radius: 21px;
-    box-shadow: 5px 5px 5px #b1d4eb;
+    box-shadow: 5px 5px 5px $color-shadow-card;
     transition: .7s;
     img {
         width: 100%;
@@ -29,9 +29,9 @@
         }
         .tag {
             display: inline;
-            border: 1px solid var(--white);
+            border: 1px solid $white;
             border-radius: 10px;
-            background-color: rgba($color: var(--white), $alpha: 0.2);
+            background-color: rgba($color: $white, $alpha: 0.2);
         }
     }
     .icon_container {
@@ -45,7 +45,7 @@
         .icon_red {
             padding-right: 10px;
             cursor: pointer;
-            fill: #970000;
+            fill: $color-favorite;
         }
     }
     &:hover {

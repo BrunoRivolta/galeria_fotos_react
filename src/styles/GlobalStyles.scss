@@ -1,18 +1,8 @@
-:root {
-    --color-blue-dark: #010d23;
-    --color-blue-inter: #03223f;
-    --color-blue-light: #038bbb;
-    --color-cyan-light: #1cb0ca;
-    --color-cyan-inter: #00f7ff;
-    --white: #FFFFFF;
-    --black: #000000;
-    --special-font: 'Shantell Sans', 'cursive';
-    --standard-font: 'Montserrat', 'sans-serif';
-}
+@import './variables';
 
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--standard-font);
+    font-family: $standard-font;
     color: white;
 }

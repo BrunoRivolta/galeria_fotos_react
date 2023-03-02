@@ -13,8 +13,8 @@ export default function Favorites() {
       <Banner />
       <h2 className={styles.titulo_galeria}>Fotos Favoritas</h2>
       <section className={styles.galeria}>
-        {favorite.map(foto => {
-          return <Card key={foto.id} foto={foto}/>
+        {favorite.map(photo => {
+          return <Card key={photo.id} photo={photo}/>
         })}
       </section> 
     </section>

@@ -1,7 +1,7 @@
-@import '../../styles/GlobalStyles.scss';
+@import '../../styles/variables';
 
 .footer {
-    background-color: var(--color-blue-light);
+    background-color: $color-blue-light;
     margin-top: 30px;
     width: 100%;
     height: 4rem;

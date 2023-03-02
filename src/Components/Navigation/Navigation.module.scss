@@ -1,24 +1,24 @@
-@import '../../styles/GlobalStyles.scss';
+@import '../../styles/variables';
 
 .background {
     width: 100%;
     height: 4rem;
-    background-color: var(--color-blue-dark);
+    background-color: $color-blue-dark;
     display: flex;
     align-items: center;
     li {
         list-style-type: none;
         padding: 1rem;
         a {
-            font-family: var(--special-font);
+            font-family: $special-font;
             text-decoration: none;
-            color: var(--white);
+            color: $white;
             font-weight: 400;
             cursor: pointer; 
             transition: .7s;
             &:hover { 
                 font-size: 1.1em;
-                color: var(--color-cyan-light);
+                color: $color-cyan-light;
             }
         }
     }

@@ -1,4 +1,4 @@
-@import '../../styles/GlobalStyles.scss';
+@import '../../styles/variables';
 
 .container {
     position: relative
@@ -9,10 +9,10 @@
 }
 
 .titulo {
-    font-family: var(--special-font);
+    font-family: $special-font;
     font-size: 30px;
-    text-shadow: 2px 2px var(--black);
-    color: var(--color-cyan-inter);
+    text-shadow: 2px 2px $black;
+    color: $color-cyan-inter;
     position: absolute;
     left: 100px;
     top: 100px;
@@ -20,10 +20,10 @@
 }
 
 .titulo1 {
-    font-family: var(--special-font);
+    font-family: $special-font;
     font-size: 30px;
-    text-shadow: 2px 2px var(--black);
-    color: var(--color-cyan-inter);
+    text-shadow: 2px 2px $black;
+    color: $color-cyan-inter;
     position: absolute;
     left: 100px;
     top: 140px;

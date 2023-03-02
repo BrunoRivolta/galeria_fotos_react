@@ -1,9 +1,9 @@
-@import '../../styles/GlobalStyles.scss';
+@import '../../styles/variables';
 
 .container {
     .titulo_galeria{
-        font-family: var(--special-font);
-        color: var(--black);
+        font-family: $special-font;
+        color: $black;
         margin: 15px;
         font-weight: 400;
     }
