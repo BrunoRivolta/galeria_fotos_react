@@ -1,4 +1,4 @@
-import { FaRegHeart, FaTrash, FaHeart } from 'react-icons/fa'
+import { FaRegHeart, FaDownload, FaHeart } from 'react-icons/fa'
 import { BiCamera } from 'react-icons/bi'
 import React, { useState } from 'react'
 import styles from './Card.module.scss'
@@ -31,7 +31,7 @@ export default function Card({ photo }) {
             <p className={styles.tag}>{photo.tag}</p>
         </div>
         <div className={styles.icon_container}>
-            <FaTrash className={styles.icon} />
+          <a href={photo.endereco} download><FaDownload className={styles.icon} /></a>
             {icon}
         </div>
         <Modal isOpen={openModal} setModalOpen={() => setModal(!openModal)} image={imagem} />

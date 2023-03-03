@@ -45,7 +45,7 @@ export default function AddPhoto() {
           </select>
         </div>
         <div className={styles.button_container}>
-          <Button type="submit" textColor={"black"}>Adicionar Foto</Button>
+          <Button type="submit">Adicionar</Button>
         </div>
       </form>
     </main>

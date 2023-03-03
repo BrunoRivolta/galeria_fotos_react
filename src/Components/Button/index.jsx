@@ -1,8 +1,8 @@
 import React from 'react'
 import style from './Button.module.scss'
 
-export default function Button({children, onClick, textColor= "white"}) {
+export default function Button({ children, onClick }) {
   return (
-    <button onClick={onClick} className={style.botao} style={{"color": textColor}}>{children}</button>
+    <button onClick={onClick} className={style.botao} >{children}</button>
   )
 }
