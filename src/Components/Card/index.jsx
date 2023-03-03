@@ -1,4 +1,5 @@
 import { FaRegHeart, FaDownload, FaHeart } from 'react-icons/fa'
+import { MdOutlineOpenInFull } from 'react-icons/md'
 import { BiCamera } from 'react-icons/bi'
 import React, { useState } from 'react'
 import styles from './Card.module.scss'
@@ -31,6 +32,12 @@ export default function Card({ photo }) {
             <p className={styles.tag}>{photo.tag}</p>
         </div>
         <div className={styles.icon_container}>
+          <MdOutlineOpenInFull 
+            className={styles.icon}           
+            onClick={() => {
+            setImagem(photo)
+            setModal(true)}}
+          /> 
           <a href={photo.endereco} download><FaDownload className={styles.icon} /></a>
             {icon}
         </div>

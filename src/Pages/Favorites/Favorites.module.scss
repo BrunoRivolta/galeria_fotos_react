@@ -12,10 +12,34 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .empty {
+        margin: 50px 50px;
+        text-align: center;
+        h2 {
+            color: $black;
+            font-size: 1em;
+        }
+        p {
+            color: $black;
+            font-size: 0.8em;
+        }
+        .background {
+            font-size: 12em;
+            fill: rgb(124, 118, 118);
+            opacity: 0.6;
+        }
+    }
 }
 
 @media(max-width: 550px) {
     .title {
         font-size: 1em;
+    }
+}
+
+@media(min-width: 1350px) {
+    .container {
+        margin: 0 auto;
+        width: 75%;
     }
 }

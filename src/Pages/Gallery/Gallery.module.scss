@@ -19,3 +19,10 @@
         font-size: 1em;
     }
 }
+
+@media(min-width: 1350px) {
+    .container {
+        margin: 0 auto;
+        width: 75%;
+    }
+}
