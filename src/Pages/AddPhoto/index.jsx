@@ -2,14 +2,21 @@ import Banner from 'Components/Banner'
 import Button from 'Components/Button'
 import React from 'react'
 import styles from './AddPhoto.module.scss'
+import { AiOutlineTable, AiOutlinePicture } from 'react-icons/ai';
+import { BsArrowRightShort } from 'react-icons/bs';
 
-export default function AddPhoto() {
+export default function AddPhoto() {  
   return (
     <main>
       <Banner />
       <h2 className={styles.title}>Adicine suas fotos</h2>
       <form className={styles.container}>
         <div className={styles.input}>
+          <section className={styles.icon_container}>
+            <AiOutlinePicture className={styles.icons}/>
+            <BsArrowRightShort className={styles.icons}/>
+            <AiOutlineTable className={styles.icons}/>
+          </section>
           <label htmlFor="title">Titulo:</label>
           <input 
             id='title'

@@ -1,6 +1,6 @@
 import Banner from 'Components/Banner'
 import Card from 'Components/Card'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styles from './Favorites.module.scss'
 import { useFavoriteContext } from 'Common/Context/favorites'
 import { BsCardImage } from 'react-icons/bs';
