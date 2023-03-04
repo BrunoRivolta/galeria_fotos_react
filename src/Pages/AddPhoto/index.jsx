@@ -8,8 +8,9 @@ import { BsArrowRightShort } from 'react-icons/bs';
 import SelectField from 'Components/SelectField';
 import { AddPhotosContext } from 'Common/Context/addPhoto';
 import { v4 as uuidv4 } from 'uuid'
+import { Link } from 'react-router-dom';
 
-export default function AddPhoto() {  
+export default function AddPhoto() {
 
   const { photos, setPhotos } = useContext(AddPhotosContext)
 
@@ -46,7 +47,7 @@ export default function AddPhoto() {
   return (
     <main>
       <Banner />
-      <h2 className={styles.title}>Adicine suas fotos</h2>
+      <h2 className={styles.title}>Adicione suas fotos</h2>
       <form className={styles.container} >
         <div className={styles.input}>
           <section className={styles.icon_container}>
@@ -60,13 +61,15 @@ export default function AddPhoto() {
           <SelectField toAlter={value => setPhototag(value)} tagsList={tags} label={'tag'} name={'Tags'} />
         </div>
         <div className={styles.button_container}>
-          <Button onClick={(event) => {
-            event.preventDefault()
-            addNewPhoto(title, author, address, photoTag)
-            }}
-          >
-            Adicionar
-          </Button>
+          <Link to={'/'}>
+            <Button onClick={(event) => {
+              event.preventDefault()
+              addNewPhoto(title, author, address, photoTag)
+              }}
+            >
+              Adicionar
+            </Button>
+          </Link>
         </div>
       </form>
     </main>
