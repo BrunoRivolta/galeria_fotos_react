@@ -1,4 +1,4 @@
-import { FaRegHeart, FaDownload, FaHeart } from 'react-icons/fa'
+import { FaRegHeart, FaDownload, FaHeart, FaTrashAlt } from 'react-icons/fa'
 import { MdOutlineOpenInFull } from 'react-icons/md'
 import { BiCamera } from 'react-icons/bi'
 import React, { useState } from 'react'
@@ -6,7 +6,7 @@ import styles from './Card.module.scss'
 import { useFavoriteContext } from 'Common/Context/favorites'
 import Modal from 'Components/Modal'
 
-export default function Card({ photo }) {
+export default function Card({ photo, del }) {
 
   const [openModal, setModal] = useState(false)
   const [imagem, setImagem]= useState()
@@ -40,6 +40,7 @@ export default function Card({ photo }) {
           /> 
           <a href={photo.endereco} download><FaDownload className={styles.icon} /></a>
             {icon}
+          <FaTrashAlt className={styles.icon} onClick={del}/>
         </div>
         <Modal isOpen={openModal} setModalOpen={() => setModal(!openModal)} image={imagem} />
     </div>

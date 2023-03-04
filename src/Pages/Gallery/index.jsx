@@ -31,6 +31,12 @@ export default function Gallery() {
     setImageTags(newPhotos)
   }
 
+  function del(id) {
+    const newList = imageTag.filter(item => item.id !== id)
+    setImageTags(newList)
+    setImage(newList) 
+  }
+
   return (
     <section className={styles.container}>
       <Banner />
@@ -38,7 +44,7 @@ export default function Gallery() {
       <Tags tags={tagsList} filter={filtersPhotos} setItens={setImageTags} image={image}/>
       <section className={styles.gallery}>
         {imageTag.map(photo => (
-          <Card key={photo.id} photo={photo}/>
+          <Card key={photo.id} photo={photo} del={() => del(photo.id)}/>
         ))}
       </section> 
     </section>
