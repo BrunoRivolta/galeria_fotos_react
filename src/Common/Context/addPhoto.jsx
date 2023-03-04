@@ -5,7 +5,6 @@ AddPhotosContext.displayName = "AddPhotos";
 
 export default function AddPhotosProvider({ children }) {
     const [photos, setphotos] = useState([]);
-
     return (
         <AddPhotosContext.Provider
             value={{ photos, setphotos }}>
