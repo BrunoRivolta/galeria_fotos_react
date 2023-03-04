@@ -1,13 +1,17 @@
 import Banner from 'Components/Banner'
 import Button from 'Components/Button'
 import InputField from 'Components/InputField';
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import styles from './AddPhoto.module.scss'
 import { AiOutlineTable, AiOutlinePicture } from 'react-icons/ai';
 import { BsArrowRightShort } from 'react-icons/bs';
 import SelectField from 'Components/SelectField';
+import { AddPhotosContext } from 'Common/Context/addPhoto';
+import { v4 as uuidv4 } from 'uuid'
 
 export default function AddPhoto() {  
+
+  const { photos, setPhotos } = useContext(AddPhotosContext)
 
   const tags = ['Brasil', 'Lagos', 'Neve', 'Paisagens', 'PorDoSol', 'Praia']
 
@@ -16,7 +20,28 @@ export default function AddPhoto() {
   const [address, setAddress] = useState()
   const [photoTag, setPhototag] = useState('Brasil')
 
-  console.log(photoTag)
+  function addNewPhoto(title, author, address, tag) {
+    if(photos.length === 0) {
+      setPhotos([{
+        id: uuidv4(),
+        titulo: title,
+        endereco: address,
+        autor: author,
+        tag: tag
+      }])
+    } else {
+      const list = photos
+      const newPhoto = {
+        id: uuidv4(),
+        titulo: title,
+        endereco: address,
+        autor: author,
+        tag: tag
+      }
+      list.splice(0, 0, newPhoto)
+      setPhotos(list)
+    }
+  }
 
   return (
     <main>
@@ -35,7 +60,13 @@ export default function AddPhoto() {
           <SelectField toAlter={value => setPhototag(value)} tagsList={tags} label={'tag'} name={'Tags'} />
         </div>
         <div className={styles.button_container}>
-          <Button>Adicionar</Button>
+          <Button onClick={(event) => {
+            event.preventDefault()
+            addNewPhoto(title, author, address, photoTag)
+            }}
+          >
+            Adicionar
+          </Button>
         </div>
       </form>
     </main>

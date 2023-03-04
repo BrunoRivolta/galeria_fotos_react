@@ -4,10 +4,10 @@ export const AddPhotosContext = createContext();
 AddPhotosContext.displayName = "AddPhotos";
 
 export default function AddPhotosProvider({ children }) {
-    const [photos, setphotos] = useState([]);
+    const [photos, setPhotos] = useState([]);
     return (
         <AddPhotosContext.Provider
-            value={{ photos, setphotos }}>
+            value={{ photos, setPhotos }}>
             {children}
         </AddPhotosContext.Provider>
     )

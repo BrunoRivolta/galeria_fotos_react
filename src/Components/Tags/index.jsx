@@ -6,9 +6,9 @@ export default function Tags({tags, filter, setItens, image}) {
     <div className={styles.container}>
       <p>Filtre por tags:</p>
       <ul className={styles.tags_container}>
-        {tags.map(tag => {
+        {tags.map((tag, index) => {
           return (
-            <li key={tag} onClick={() => filter(tag)} >{tag}</li>
+            <li key={index} onClick={() => filter(tag)} >{tag}</li>
           )
         })}
         <li onClick={() => setItens(image)}>Todas</li>
