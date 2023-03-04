@@ -3,7 +3,8 @@
 
 Site com galeria de fotos feito em React com várias funcionalidades interessantes.
 
-![Galeria de fotos](https://images2.imgbox.com/b4/2a/qq5kmJ1L_o.gif)
+![Galeria de fotos](https://images2.imgbox.com/b4/2a/qq5kmJ1L_o.gif)    
+
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
 ![HTML5](https://img.shields.io/badge/html5-%23323330.svg?style=for-the-badge&logo=html5&logoColor=%23ff8c3b) 

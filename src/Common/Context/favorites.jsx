@@ -8,13 +8,13 @@ export default function FavoritesProvider({ children }) {
 
     return (
         <FavoritesContext.Provider
-        value={{favorite, setFavorite }}>
+            value={{favorite, setFavorite }}>
             {children}
         </FavoritesContext.Provider>
     )
 }
 
-export function useFavoriteContext(){
+export function useFavoriteContext() {
     const { favorite, setFavorite } = useContext(FavoritesContext);
 
     function addFavorite(newFavorite) {
