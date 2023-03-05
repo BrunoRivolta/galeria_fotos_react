@@ -20,7 +20,7 @@ https://galeria-fotos-react.vercel.app
 
 ## Repositório
 
-Segue abaixo o link do repósitorio e documentação no GitHub 
+Segue abaixo o link do repositório e documentação no GitHub 
 
 https://github.com/BrunoRivolta/galeria_fotos_react
 
@@ -37,7 +37,7 @@ https://6400686f29deaba5cb36bf60.mockapi.io/rivolta/galeria
 
 ### Tags
 
-Na galeria é possivel usar as tags para filtrar as fotos. Desta forma podemos por exemplo filtrar e exibir apenas as fotos de por do sol. Seguem abaixo a lista de tags:
+Na galeria é possível usar as tags para filtrar as fotos. Desta forma, podemos, por exemplo, filtrar e exibir apenas as fotos do pôr do sol. Seguem abaixo a lista de tags:
 
  - Brasil
  - Lagos
@@ -49,7 +49,7 @@ Na galeria é possivel usar as tags para filtrar as fotos. Desta forma podemos p
 
 ### Favoritos
 
-A pagina possui uma seção de Favoritos, bastar marcar o icone de coração nas fotos da galeria, para que as mesmas sejam enviadas para a seção de favoritos. Ao desmarcar o icone de coração as fotos são excluidas da seção favoritos.
+A pagina possui uma seção de Favoritos, bastar marcar o ícone de coração nas fotos da galeria, para que as mesmas serem enviadas para a seção de favoritos. Ao desmarcar o ícone do coração, as fotos são excluídas da seção favoritos.
 
 
 ### Modal
@@ -59,7 +59,12 @@ Ao clicar nas imagens é aberto um modal exibindo a foto ampliada.
 
 ### Adicionar 
 
+Podemos adicionar novas imagens a galeria acessando a página Adicionar.
 
+
+### Baixar imagens
+
+Ao clicar no botão download é possível baixar a imagem.
 
 
 ## Recursos do React
