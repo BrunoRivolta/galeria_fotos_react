@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function InputField({ toAlter, label, name, type, placeholder }) {
+export default function InputField({ toAlter, label, name, type, placeholder, value }) {
 
     const toType = (event) => {
         toAlter(event.target.value)
@@ -16,6 +16,7 @@ export default function InputField({ toAlter, label, name, type, placeholder }) 
           placeholder={`${placeholder}...`}
           required
           onChange={toType} 
+          value={value}
         />
     </div>
   )

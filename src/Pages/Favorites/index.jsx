@@ -20,7 +20,7 @@ export default function Favorites() {
         <p>Vá para a galeria e click nos icones de coração para adicionar aos favoritos.</p>
         <BsCardImage className={styles.background} />
       </section>
-      <section className={styles.gallery}>contém favoritolista 
+      <section className={styles.gallery}>
         {favorite.map(photo => {
             return <Card key={photo.id} photo={photo} />
           })

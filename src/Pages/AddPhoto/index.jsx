@@ -22,9 +22,11 @@ export default function AddPhoto() {
   const [photoTag, setPhototag] = useState('Brasil')
   const [error, setError] = useState()
   const [sucess, setSucess] = useState()
+  const [resetInput, setResetInput] = useState()
 
   function formValidation() {
     setError('')
+    setSucess('')
 
     if(title === undefined || author === undefined || address === undefined) {
       return setError('! Todos os campos precisam ser preenchidos')
@@ -40,7 +42,8 @@ export default function AddPhoto() {
     } 
 
     addNewPhoto(title, author, address, photoTag)
-    setSucess('Adicionado com Sucesso, veja na galeria')
+    setSucess('✓ Adicionado com Sucesso, veja na galeria')
+    setResetInput('')
   }
 
   function addNewPhoto(title, author, address, tag) {
@@ -78,13 +81,13 @@ export default function AddPhoto() {
             <BsArrowRightShort className={styles.icons}/>
             <AiOutlineTable className={styles.icons}/>
           </section>
-          <InputField toAlter={value => setTitle(value)} label={'title'} name={'Titulo'} type={'text'} placeholder={'Titulo da foto'} />
-          <InputField toAlter={value => setAuthor(value)} label={'author'} name={'Autor'} type={'text'} placeholder={'Autor da foto'} />
-          <InputField toAlter={value => setAddress(value)} label={'adress'} name={'Endereço'} type={'text'} placeholder={'http://galeria_fotos/lago.jpg' } />
+          <InputField toAlter={value => setTitle(value)} label={'title'} name={'Titulo'} type={'text'} placeholder={'Titulo da foto'} value={resetInput} />
+          <InputField toAlter={value => setAuthor(value)} label={'author'} name={'Autor'} type={'text'} placeholder={'Autor da foto'} value={resetInput} />
+          <InputField toAlter={value => setAddress(value)} label={'adress'} name={'Endereço'} type={'text'} placeholder={'http://galeria_fotos/lago.jpg' } value={resetInput} />
           <SelectField toAlter={value => setPhototag(value)} tagsList={tags} label={'tag'} name={'Tags'} />
           <div className={styles.message_container}>
             <span className={styles.error}>{error}</span>
-            <Link to={'/'}><span className={styles.sucess}>{sucess}</span></Link>
+            <Link className={styles.link} to={'/'}><span className={styles.sucess}>{sucess}</span></Link>
           </div>
         </div>
         <div className={styles.button_container}>
