@@ -32,8 +32,10 @@
 }
 
 @media(max-width: 550px) {
-    .title {
-        font-size: 1em;
+    .container {
+        .title {
+            font-size: 1em;
+        }
     }
 }
 

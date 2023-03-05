@@ -15,6 +15,17 @@
         padding: 30px 0;
         background-color: $color-blue-inter;
         border-radius: 20px;
+        .message_container {
+            margin-top: 20px;
+            .error {
+                font-size: 0.7em;
+                color: yellow;
+            }
+            .sucess {
+                font-size: 0.8em;
+                color: rgb(11, 236, 11);
+            }
+        }
         .icon_container {
             padding-bottom: 20px;
             .icons {

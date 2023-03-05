@@ -71,7 +71,7 @@ Neste projeto foram usados os seguintes recursos:
  - Sass
 
 
-## Redes Sociais /Contato
+## Redes Sociais / Contato
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brunorivolta/)
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://www.youtube.com/channel/UC6XJ3aQvFBU7gqHvebolwJQ) 
