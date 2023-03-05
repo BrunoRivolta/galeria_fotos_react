@@ -22,7 +22,7 @@ export default function Gallery() {
   const [imageTag, setImageTags] = useState([])
   const { photos } = useContext(AddPhotosContext)
 
-  const tagsList = [...new Set(image.map(value => value.tag))]
+  const tagsList = ['Brasil', 'Lagos', 'Neve', 'Paisagens', 'PorDoSol', 'Praia']
 
   const filtersPhotos = (tag) => {
     const newPhotos = image.filter(photo => {
@@ -44,7 +44,7 @@ export default function Gallery() {
       <Tags tags={tagsList} filter={filtersPhotos} setItens={setImageTags} image={image}/>
       <section className={styles.gallery}>
         {imageTag.map(photo => (
-          <Card key={photo.id} photo={photo} del={() => del(photo.id)}/>
+          <Card key={photo.id} color={'#03223f'} photo={photo} del={() => del(photo.id)}/>
         ))}
       </section> 
     </section>

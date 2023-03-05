@@ -13,7 +13,7 @@ export default function InputField({ toAlter, label, name, type, placeholder, va
           id={label}
           type={type} 
           name={label} 
-          placeholder={`${placeholder}...`}
+          placeholder={`${placeholder}`}
           required
           onChange={toType} 
           value={value}

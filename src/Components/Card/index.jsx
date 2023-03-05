@@ -6,7 +6,7 @@ import styles from './Card.module.scss'
 import { useFavoriteContext } from 'Common/Context/favorites'
 import Modal from 'Components/Modal'
 
-export default function Card({ photo, del }) {
+export default function Card({ photo, del, color }) {
 
   const [openModal, setModal] = useState(false)
   const [imagem, setImagem]= useState()
@@ -18,7 +18,7 @@ export default function Card({ photo, del }) {
     : <FaHeart className={styles.icon_red} onClick={() => addFavorite(photo)} />
 
   return (
-    <div className={styles.card}>
+    <div style={{backgroundColor: color}} className={styles.card}>
         <img 
           src={photo.endereco} 
           alt={photo.titulo}               
@@ -40,7 +40,6 @@ export default function Card({ photo, del }) {
           /> 
           <a href={photo.endereco} download><FaDownload className={styles.icon} /></a>
             {icon}
-          <FaTrashAlt className={styles.icon} onClick={del}/>
         </div>
         <Modal isOpen={openModal} setModalOpen={() => setModal(!openModal)} image={imagem} />
     </div>

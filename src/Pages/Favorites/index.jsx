@@ -22,7 +22,7 @@ export default function Favorites() {
       </section>
       <section className={styles.gallery}>
         {favorite.map(photo => {
-            return <Card key={photo.id} photo={photo} />
+            return <Card key={photo.id} color={'#1b5d83'} photo={photo} />
           })
         }
       </section> 
